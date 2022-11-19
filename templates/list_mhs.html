@@ -8,6 +8,8 @@
 </head>
 <body>
     <h1>List data mahasiswa</h1>
+    {{ data }}
+    {{ result }}
     <table border="1">
         <tr>
             <th>Nama</th>
@@ -21,7 +23,7 @@
             <td>{{ mhs[1] }}</td>
             <td>{{ mhs[2] }}</td>
             <td>{{ mhs[3] }}</td>
-            <td><a href="/hapus">Hapus</a> | Edit</td>
+            <td><a onclick="return confirm('Mau dihapus?')" href="/hapus/{{ mhs[0] }}">Hapus</a> | Edit</td>
         </tr>
         {% endfor %}
 

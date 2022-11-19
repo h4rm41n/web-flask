@@ -19,7 +19,7 @@ def Home():
 @web.route('/mahasiswa')
 def ListMahasiswa():
     cursor = db.cursor()
-    cursor.execute("SELECT nama, nim, alamat FROM tb_mahasiswa")
+    cursor.execute("SELECT * FROM tb_mahasiswa")
     result = cursor.fetchall()
 
     return render_template('list_mhs.html', data=result)

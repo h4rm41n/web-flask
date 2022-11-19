@@ -8,6 +8,7 @@
 - virtualenv env
 - source env/bin/activated (Scripts\bin\activated = windows)
 - pip install -r install.txt
+- file install.txt adalah kumpulan librari atau package yang harus diinstall
 
 ### menjalankan aplikasi flask
 - flask --app run.py --debug run
